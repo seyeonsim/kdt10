@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 실습 2 설문조사 폼 만들기 -->
+    <b><p>설문조사</p></b>
+    
+    <form>
+        이름
+        <input type="text" placeholder="이름">
+        <br>
+        이메일
+        <input type="text" placeholder="love@example.com">
+
+        <br>
+        <br>
+        <b><p>나이</p></b>
+        <input type="radio" name="나이" value="1o대" checked>10대
+        <input type="radio" name="나이" value="2o대">20대
+        <input type="radio" name="나이" value="3o대">30대
+        <input type="radio" name="나이" value="4o대">40대
+        <input type="radio" name="나이" value="5o대">50대
+        <input type="radio" name="나이" value="6o대">60대 이상
+
+    <br>
+    <b><p>원하는 강의(복수응답가능합니다.)</p></b>
+    <input type="checkbox" name="html" checked>html
+    <input type="checkbox" name="javascript">javascript
+    <input type="checkbox" name="css">css
+    <br>
+    <br>
+    <textarea placeholder="하고 싶은 말을 써주세요 :)" cols="30" rows="10"></textarea>
+
+    <input type="button" value="제출">
+    </form>
+    <hr>
+
+    <!-- 실습 2 설문조사 폼 만들기 : 리더님 코드 -->
+    <form>
+        <h4>설문조사</h4>
+        이름<input type="text"><br>
+        이메일<input type="email" placeholder="love@example.com">
+        <h4>나이</h4>
+        <input type="radio" name="age" value="1o대" checked>10대
+        <input type="radio" name="age" value="2o대">20대
+        <input type="radio" name="age" value="3o대">10대
+        <input type="radio" name="age" value="1o대">10대
+        <input type="radio" name="age" value="1o대">10대
+        <input type="radio" name="age" value="1o대">10대
+        <h4>원하는 강의 복수응답가능</h4>
+        <input type="checkbox" name="lecture" value="html" checked>html
+        <input type="checkbox" name="lecture" value="js">js
+        <input type="checkbox" name="lecture" value="css">css
+        <br><br>
+        <!-- 텍스트 박스 크기 조절 : cols는 가로 rows는 세로 -->
+        <textarea cols="80" rows="15" placeholder="하고싶은말을써주세요"></textarea>
+        <input type="button" value="제출">
+    </form>
+</body>
+</html>
