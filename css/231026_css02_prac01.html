@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 실습 3 가상 클래스 선택자 1 */
+        h1:hover {
+            color: red;    
+        }
+        a:active {
+            background-color: blue;
+        }
+        input:focus {
+            background-color: orange;
+        }
+
+        /* 실습 4 줄무늬 모양 만들기 */
+        .stripes div:nth-child(2n+1) {
+            color: white;
+            background-color: navy;
+        }
+        .stripes div:nth-child(2n) {
+            background-color: yellow;
+        }
+
+    </style>
+</head>
+<body>
+    <!-- 실습 3 가상 클래스 선택자 1 -->
+    <h1>hello</h1>
+    <a href="https://www.naver.com/">네이버바로가기</a>
+    <br>
+    <input type="text">
+
+    <br><br><br>
+    <hr>
+    <br>
+
+    <!-- 실습 4 줄무늬 모양 만들기 -->
+    <div class="stripes">
+        <div>navy</div>
+        <div>yellow</div>
+        <div>navy</div>
+        <div>yellow</div>
+        <div>navy</div>
+        <div>yellow</div>
+        <div>navy</div>
+        <div>yellow</div>
+        <div>navy</div>
+        <div>yellow</div>
+    </div>
+</body>
+</html>
