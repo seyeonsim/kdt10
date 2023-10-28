@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            width: 500px;
+            height: 500px;
+            background-color:palevioletred;
+            display: flex;
+        }
+
+        .container > div {
+            width: 100px;
+            height: 100px;
+            border: 1px solid gray;
+            background-color: paleturquoise;
+        }
+        .container1 {
+            width: 500px;
+            height: 500px;
+            background-color:palevioletred;
+            display: flex;
+            flex-direction: row-reverse;
+        }
+
+        .container1 > div {
+            width: 100px;
+            height: 100px;
+            border: 1px solid gray;
+            background-color: paleturquoise;
+        }
+        .container2 {
+            width: 500px;
+            height: 500px;
+            background-color:palevioletred;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .container2 > div {
+            width: 100px;
+            height: 100px;
+            border: 1px solid gray;
+            background-color: paleturquoise;
+        }
+
+        /* 실습 6 flex-wrap */
+
+        .container3 {
+            width: 500px;
+            height: 500px;
+            background-color:palevioletred;
+            display: flex;
+            flex-wrap: nowrap;
+        }
+
+        .container3 > div {
+            width: 100px;
+            height: 100px;
+            border: 1px solid gray;
+            background-color: paleturquoise;
+        }
+
+        .container4 {
+            width: 500px;
+            height: 500px;
+            background-color:palevioletred;
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .container4 > div {
+            width: 100px;
+            height: 100px;
+            border: 1px solid gray;
+            background-color: paleturquoise;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+    <br>
+
+    <div class="container1">
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+    <br>
+
+    <div class="container2">
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+    <br><br>
+
+
+    <!-- 실습 6 flex-wrap -->
+
+    <div class="container3">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+
+    <br><br>
+
+    <div class="container4">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        
+    </div>
+    <br><br>
+
+</body>
+</html>

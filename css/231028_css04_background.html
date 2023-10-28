@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            background-color: orange;
+            width: 500px;
+            width: 800px;
+            height: 500px;
+        }
+        .background-img {
+            background-image: url(https://item.kakaocdn.net/do/d84248170c2c52303db27306a00fb861f604e7b0e6900f9ac53a43965300eb9a);
+
+            /* 1. background repeat */
+            background-repeat: repeat;
+            /* default */
+            background-repeat: repeat-x;
+            background-repeat: repeat-y;
+            background-repeat: no-repeat;
+
+            /* background position */
+            background-position: left;
+            background-position: left top;
+            background-position: center;
+            background-position: 10px 40px; 
+            /* y축기준 x축기준 */
+
+            /* background size */
+            background-size: auto; 
+            /* default */
+            background-size: 100px;
+            background-size: 100px 50px;
+            background-size: cover; 
+            background-size: contain
+        }
+
+        /* background attachment */
+        .background-attach {
+            width: 300px;
+            height: 300px;
+            overflow: scroll;
+            background-image: url(https://item.kakaocdn.net/do/d84248170c2c52303db27306a00fb861f604e7b0e6900f9ac53a43965300eb9a);
+
+            background-attachment: local;
+            background-attachment: scroll;
+            /* fixed는 viewport 기준 */
+            background-attachment: fixed;
+        }
+    </style>
+</head>
+<body style="height: 1000px;">
+    <div class="background-img"></div>
+    <div class="background-attach">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat iusto aut harum veritatis eveniet nihil delectus incidunt eum exercitationem, fugiat atque quaerat iste, a necessitatibus sint tempore ea velit unde.
+        Molestiae, atque eaque fuga, sed itaque dolorem neque laborum quis nisi ducimus, possimus quos ea sapiente similique. Animi, illum minima exercitationem in neque cum quos sunt maiores aliquid quibusdam eligendi.
+        Vitae culpa ad labore, est tenetur perspiciatis dolorum aut sint sit suscipit laudantium nihil unde saepe blanditiis similique, esse dolorem voluptates possimus fugit tempore, quas placeat reiciendis pariatur obcaecati. Tenetur.
+        Explicabo veritatis aut maiores molestiae laboriosam magnam alias cupiditate rerum nihil quo nostrum aliquam, harum impedit exercitationem eveniet. Dolore cumque officia id numquam ipsum adipisci omnis eligendi ullam ut nostrum?
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam eligendi architecto cupiditate. Eos laboriosam odit porro ab ipsum debitis explicabo minus enim consequatur possimus, dolorum, praesentium voluptatem dolore corrupti sapiente.
+    </div>
+</body>
+</html>
