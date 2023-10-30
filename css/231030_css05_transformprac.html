@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            width: 800px;
+            height: 600px;
+            background-color: bisque;
+            display: flex;
+            justify-content: center;
+        }
+
+        img {
+            width: 200px;
+            height: 200px;
+            transform: skewY(20deg);
+            position: relative;
+        }
+
+        .c1 {
+            z-index: 3;
+            top: 200px;
+        }
+
+        .c2 {
+            z-index: 2;
+            top: 150px;
+            left: -50px;
+        }
+
+        .c3 {
+            z-index: 1;
+            top: 100px;
+            left: -100px
+        }
+        
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <img class="c1"
+            src="https://mblogthumb-phinf.pstatic.net/MjAyMjEyMjdfMjU0/MDAxNjcyMTA4NDk3Mjgz.FL2vinKY8blok71V-vE8Ragtb29OxcmA-8gD7a72rPsg.QmZok2QhKWPsRRnpmI1cWj1eNlcF60LQ9chHwyofRiAg.JPEG.qmfosej/IMG_4003.jpg?type=w800"
+            alt="">
+
+
+        <img class="c2"
+            src="https://d2u3dcdbebyaiu.cloudfront.net/uploads/atch_img/52/0d0204ffefdc0e7a33e34b942d53c6a7_res.jpeg"
+            alt="">
+
+
+        <img class="c3" src="https://res.heraldm.com/content/image/2023/09/08/20230908000609_0.jpg" alt="">
+    </div>
+</body>
+
+</html>

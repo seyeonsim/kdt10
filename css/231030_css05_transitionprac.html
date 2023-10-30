@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            width: 100px;
+            height: 100px;
+            background-color: black;
+            color: white;
+            overflow: auto;
+            transition-property: width, height;
+            transition-duration: 1s;
+            transition-delay: 0.5s;
+            /* 실습 2 trnastiton : 리더님 코드 */
+            /* transition: all 1s linear 0.5s; */
+            /* transition-property: all; 비워둬도 all과 같다 */
+        }
+        .box:hover {
+            width: 300px;
+            height: 300px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Transition 실습</h1>
+    <div class="box">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, eius eaque nisi voluptatem voluptates veniam repudiandae obcaecati. Eligendi, dolore! Delectus ea dolores dicta placeat dolore eos quaerat vel itaque fugit.</div>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 실습 4 animation(2) */
+        div {
+            position: absolute;
+            animation-name: text;
+            animation-duration: 3s;
+            animation-iteration-count: 1;
+            
+        }
+        @keyframes text {
+            0% {
+                left: 100%;
+            }
+            100% {
+                left: 0%;
+            }
+            /* 실습 4 animation(2) : 리더님 코드 */
+            from {
+                margin-left: 100%;
+                width: 300%;
+            }
+            to {
+                margin: 0%;
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste facere ullam quibusdam dolor culpa cupiditate soluta officiis voluptatem totam earum voluptate, dolorum itaque. In cum, illum ducimus cupiditate aliquid beatae?
+    </div>
+</body>
+</html>
