@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    // 실습 1
+    let color = ['red', 'orange', 'yellow', 'green', 'blue', 'navy', 'purple']
+
+    console.log('index 2', color[2])
+
+    color.push('push 후', 'black')
+    console.log(color)
+
+    color.indexOf('black index no.', "black")
+    console.log(color.indexOf("black"))
+
+    // let reverse = color.reverse : 이렇게도 가능
+    color.reverse()
+    console.log('reverse 후', color)
+
+    // 실습 2
+    let me = {
+        name: '세연',
+        isFemale: true,
+        howTall: '170cm',
+    }
+    console.log(me)
+    console.log('나의 이름은 ' + me.name + '입니다.')
+    console.log(me.isFemale)
+
+    // 실습 3
+    let number = 321;
+    let blah = '문자';
+    let empty = null
+    let choice = true
+    console.log(typeof 321 + " isn't " + typeof "문자" + " data type.");
+    console.log("Typeof를 boolean이나 null에 사용하면, " + typeof true + "이나 " + typeof null + " 결과를 얻을 수 있습니다.")
+
+    console.log(`${typeof 1} isn't ${typeof '1'} data type.`)
+    console.log(`Typeof를 boolean이나 null에 사용하면 ${typeof true}나 ${typeof null} 결과를 얻을 수 있습니다.`)
+
+
+    // 실습 4
+let mathScore = "77";
+let engScore = "88";
+
+let avgScore = (Number(mathScore) + Number(engScore)) / 2;
+console.log(avgScore);
+    
+
+</script>
+
+<body>
+
+</body>
+
+</html>
