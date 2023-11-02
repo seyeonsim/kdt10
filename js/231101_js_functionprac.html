@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // 실습 1
+        function multifly(number1, number2) {
+            return number1 * number2;
+
+            // 리더님 코드 : 어제 배운 Number 사용한 방법
+            // return Number(number1) * Number(number2);
+
+        }
+        console.log(multifly(3, 7))
+        console.log(multifly(2, 2))
+
+
+        // 실습 2
+        function square(num) {
+            // console.log(num * num);
+
+            // 리더님 코드 : 어제 배운 Number 사용한 방법/ Number 한번만 쓰고싶을때
+            num = Number(num);
+            console.log(num * num);
+
+            // 리더님 코드 : 어제 배운 Number 사용한 방법
+            // console.log(Number(num) * Number(num));
+        }
+        square(4);
+        square(11);
+        square(5);
+
+
+        // 실습 3
+        // 전역변수, 지역변수
+        // 전역변수가 지역변수보다 범위가 크다
+        // 하지만 지역변수가 좀 더 특별함
+        
+        let num1 = prompt('첫번째 숫자')
+        num1 = Number(num1)
+        let num2 = prompt('두번째 숫자')
+        num2 = Number(num2)
+
+        function add() {
+            let result = num1 + num2
+            alert(result);
+        }
+
+
+
+
+    </script>
+</head>
+
+<body>
+    <!-- 실습 3 -->
+<button onclick="add()">add</button>
+<button onclick="sub()">sub</button>
+<button onclick="mul()">mul</button>
+<button onclick="div()">div</button>
+
+</body>
+
+</html>
