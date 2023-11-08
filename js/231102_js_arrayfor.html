@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        let fruits = ['apple','banana', 'orange', 'melon', 'grape'];
+
+        console.log('for basic : ')
+        for(let i =0; i < fruits.length; i++) {
+            console.log(fruits[i]);
+        }
+
+        console.log('for of : ')
+        for(let fruit of fruits) {
+            console.log(fruit);
+        }
+    
+        console.log('for each : ')
+        fruits.forEach((fruit, index, arr) => {
+            console.log('fruit : ', fruit)
+            console.log('index : ', index)
+            console.log('arr : ', arr)
+        })
+
+        // 다 쓰지 않고 하나만 쓰기도 가능, 하지만 arr만 넣는 건 못 함
+        console.log('for each : ')
+        fruits.forEach((fruit) => {
+            console.log('fruit : ', fruit)
+        })
+
+
+        // filter
+        console.log('filter');
+        let filterResult = fruits.filter((fruit) => {
+            return fruit.includes('p')
+        })
+        let filterResult2 = fruits.filter(fruit => fruit.includes('p'))
+        console.log('filterResult :',filterResult2)
+        
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

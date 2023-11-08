@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // 문자열 관련 메소드
+        let str = ' Happy day~! '
+        
+        // 1. 문자열 길이
+        console.log('lenght: ', str.length);
+
+        // 2. 영어일 때 문자열을 대문자/소문자로 바꾸기
+        console.log('toUpperCase : ', str.toUpperCase());
+        console.log('toLowerCase : ', str.toLowerCase());
+
+        // 3. index 가져오기
+        console.log("index : ", str.indexOf('y'));
+        console.log('lastindex : ', str.lastIndexOf('y'));
+        console.log('lastindex : ', str.lastIndexOf('H'));
+
+        // 4. 문자열 자르기(첫번째 매개변수 핋수, 두번째는 선택)
+        console.log('slice : ', str.slice(0, 6));
+        console.log('slice : ', str.slice(-2));
+
+        // 5. 바꾸기
+        // replace :  제일 먼저 찾아지는 한 친구만 바꿈
+        console.log('replace p -> a:', str.replace('p', 'a'));
+        // replaceAll : 전부 바꿔줌
+        console.log('replace all a -> k:', str.replaceAll('a', 'k'));
+
+        // 6. 반복
+        console.log('repeat : ', str.repeat(5));
+        console.log('repeat : ', str.repeat*5);      // 곱하기는 안 됨
+
+        // 7. split :  문자열을 내가 원하는 부분에서 자르고, 그것을 배열로 만들어줌
+        console.log('split : ', str.split(''));
+        console.log('split : ', str.split(' '));
+        console.log('split : ', str.split('a'));
+
+        // 8. trim  :  좌우공백 제거
+        console.log('trim : ', str.trim());
+        console.log('trim 후 : ', str.length);
+
+
+        // 배열 관련 메소드
+
+        // join : join 안의 문자열 기준으로 문자열로 병합
+        let month = ['m','t','w','t','f','s','s'];
+        console.log('join : ', month.join());
+        // join() 안을 비워두면 기본 , 로 이어줌
+        
+        console.log('join : ', month.join('&'));        
+        console.log('join : ', month.join(''));
+        // 공백 없이 이어주려면 ' '
+
+
+        // 메소드 체이닝 : 각각의 다른 메소드를 연결해서 사용하는 개념
+        // 메소드에 return(반환값)이 있을 때 사용 가능
+        
+        // 문자열을 뒤집고 싶을 때? 문자열 메소드에는 뒤집는 메소드가 없음
+        // -> 문자열을 배열로 바꿔서 배열을 뒤집기 -> 문자열로 바꾸기
+
+        let hello = 'Hello~'
+        let helloArr = hello.split('')
+        // ['H', 'e', 'l','l','o']
+        let reverseHello = helloArr.reverse();
+        console.log('revese : ', reverseHello);
+        let helloAgain = reverseHello.join('')
+        // 다시 문자열 됨
+        console.log('hello reverse str:', helloAgain)
+
+        // 위의 단계를 한번에
+        // 메소드 체이닝
+        console.log(hello.split("").reverse().join(""));
+
+
+
+
+
+
+        
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
