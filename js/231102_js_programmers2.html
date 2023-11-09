@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function solution(n) {
+            let answer = 0;
+
+            // 1 ~ n까지 쭉 돌았을 때 각각의 값이 n을 나눈 나머지가 0
+            for (let i = 1; i <= n; i++) {
+                if (n % i == 0) answer += i;
+            }
+
+            return answer;
+        }
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
