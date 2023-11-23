@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <title>Document</title>
+</head>
+<script>
+    // function changeApple() {
+    //     $('img').attr("src", "./practice1_img/apple.png")
+    // }
+    // function changeBanana() {
+    //     $('img').attr("src", "./practice1_img/banana.png")
+    // }
+    // function changeGrapes() {
+    //     $('img').attr("src", "./practice1_img/grape.png")
+    // }
+    // function changePeach() {
+    //     $('img').attr("src", "./practice1_img/peach.png")
+    // }
+
+    // 리더님 코드 function 1개로 하기
+    function changeImg(name) {
+        // img의 scr 속성을 변경해주는 함수
+        // name : apple or banana or grape or peach
+        $('img').attr('src', `./practice1_img/${name}.png`)
+
+    }
+    
+</script>
+<style>
+    /* div {
+        text-align: center;
+    } */
+
+</style>
+
+<body>
+    <!-- <div style="width: 350px; height: 350px; border: 1px solid black;">
+        <img
+            src="./practice1_img/스크린샷 2023-11-06 오전 10.58.59.png" alt="" width="300px">
+        <br>
+        <button onclick="changeApple()">사과</button>
+        <button onclick="changeBanana()">바나나</button>
+        <button onclick="changeGrapes()">포도</button>
+        <button onclick="changePeach()">복숭아</button>
+    </div> -->
+
+    <!-- 리더님 코드 -->
+    <img src="" alt="과일" width="100px" height="100px">
+    <button onclick="changeImg('apple')">사과</button>
+    <button onclick="changeImg('banana')">바나나</button>
+    <button onclick="changeImg('grape')">포도</button>
+    <button onclick="changeImg('peach')">복숭아</button>
+
+
+
+</body>
+
+</html>
