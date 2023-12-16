@@ -3,8 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/static/css/231121_index.css">
-    <title>Document</title>
+    <!-- <link rel="stylesheet" href="/static/css/231121_index.css"> -->
+    <%- include('./component/231122_head', {title: 'Home'}) %> 
+    <!-- 231122_head.ejs로 {title: 'Home'} 값 보내기 ->  231122_head.ejs에서 title이라는 값을 사용 가능, title 태그 작성해서 이용하기 -->
+
+    <!-- <title>Document</title> -->
 </head>
 
 <body>
@@ -14,6 +17,22 @@
         <div>hi~ <%= i %>번째</div>
         <%= i %>
     <% } %>
+
+    <!-- 231122 수업 -->
+    <!-- btns 버튼 -->
+    <% console.log(btns) %>
+    <% for(let btn of btns) { %>
+        <button type="button" class="btn btn-info"><%= btn %></button>
+    <% } %>
+
+    <!-- isLogin -->
+    <% if(!isLogin) {  %>
+        <h4>아직 로그인을 안 했군요!</h4>
+        <% } else { %>
+            <h4>로그인 완료!</h4>
+            <div><%= me.name %></div>
+            <div><%= me.msg %></div>
+            <% } %>
 
 </body>
 </html>

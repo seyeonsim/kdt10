@@ -22,7 +22,15 @@ app.get('/', function(req, res) {
     // res.send('<h1>Hello Express!</h1>');
 
     //231121_index라는 파일명을 찾아서 해당 파일을 렌더
-    res.render('231121_index')
+    res.render('231121_index', {
+        // 231122 수업
+        btns: ['사과', '오렌지', '키위'],
+        isLogin: true,
+        me: {
+            name: 'seyeon',
+            msg: '반갑습니다~'
+        }
+    })
 })
 
 app.get('/kdt', function(req, res) {
@@ -30,7 +38,16 @@ app.get('/kdt', function(req, res) {
     res.send('<h1>Hello Express kdt!</h1>');
 })
 
-
+// 231122 수업
+// header - /login, /register 경로 설정
+// /login 경로로 접속했을 때
+app.get('/login', function(req, res) {
+    res.render('231122_login')
+})
+// /register 경로로 접속했을 때
+app.get('/register', function(req, res) {
+    res.render('231122_register')
+})
 
 // 포트 열기
 app.listen(PORT, function() {
