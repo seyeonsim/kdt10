@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>실습3</title>
+</head>
+
+<body>
+    <h1>콜백 지옥 예시</h1>
+
+    <script>
+    /*
+        setTimeout(function() {
+            document.body.style.backgroundColor = 'red';
+            setTimeout(function() {
+                document.body.style.backgroundColor = 'orange';
+                setTimeout(function() {
+                    document.body.style.backgroundColor = 'yellow';
+                    setTimeout(function() {
+                        document.body.style.backgroundColor = 'green';
+                        setTimeout(function() {
+                            document.body.style.backgroundColor = 'blue'
+                        }, 1000);
+                    }, 1000);
+                }, 1000);
+            }, 1000);
+        }, 1000);
+        */
+
+    function colorChange(color) {
+        return new Promise(function(resolve, reject) {
+            setTimeout(function() {
+                document.body.style.backgroundColor = color
+                resolve();
+            }, 1000)
+        })
+    }
+
+    // then - catch
+    /*
+    colorChange('red')
+        .then(() => {
+            return colorChange('orange')
+        }).then(() => {
+            return colorChange('yellow')
+        }).then(() => {
+            return colorChange('green')
+        }) .then(() => {
+            return colorChange('blue')
+        })
+        */
+
+    // async - await
+    // async function exec() {
+    //     await colorChange('red');
+    //     await colorChange('orange');
+    //     await colorChange('yellow');
+    //     await colorChange('green');
+    //     await colorChange('blue');
+    //     }
+    // exec();
+
+    </script>
+</body>
+
+</html>
