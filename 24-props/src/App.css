@@ -1,0 +1,22 @@
+.App {
+  text-align: center;
+}
+
+.Food > p > b {
+  color: red;
+}
+
+.BookBg {
+  background-color: lemonchiffon;
+  width: fit-content;
+  padding: 5px;
+  margin: 20px;
+}
+
+.Best {
+  color: orange;
+}
+
+.Sdetail {
+  text-align: start;
+}
