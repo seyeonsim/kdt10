@@ -19,7 +19,7 @@ $animation-duration: 0.4s;
 .container {
   display: flex;
 
-  // - 중첩: 부모 자식 표션 가능
+  // - 중첩: 부모 자식 표현 가능
   .box {
     @include box(150px);
 
