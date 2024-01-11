@@ -6,6 +6,7 @@ import UseReducerEx from "./UseReducerEx";
 import Faq from "./Faq";
 import Form from "./Form";
 import FormEx from "./FormEx";
+import FormExA from "./FormExA";
 
 function App() {
   return (
@@ -29,6 +30,9 @@ function App() {
       <hr />
 
       <FormEx />
+      <hr />
+
+      <FormExA />
     </div>
   );
 }
